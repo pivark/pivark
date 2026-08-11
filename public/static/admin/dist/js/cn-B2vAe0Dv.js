@@ -1,0 +1,1 @@
+import{Mt as e,jt as t}from"./vendor-lib-T4YOp5m5.js";function n(...n){return t(e(n))}export{n as t};

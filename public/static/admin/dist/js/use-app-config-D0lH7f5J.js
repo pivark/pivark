@@ -1,0 +1,1 @@
+function e(e){let t=(typeof window<`u`?window.__PIVARK_ADMIN_API_BASE__:void 0)||e||`/admin`;return String(t).replace(/\/+$/,``)}function t(t,n){let{VITE_GLOB_API_URL:r,VITE_GLOB_AUTH_DINGDING_CORP_ID:i,VITE_GLOB_AUTH_DINGDING_CLIENT_ID:a}=n?window._PIVARK_ADMIN_APP_CONF_:t,o={apiURL:e(r),auth:{}};return i&&a&&(o.auth.dingding={clientId:a,corpId:i}),o}export{t};

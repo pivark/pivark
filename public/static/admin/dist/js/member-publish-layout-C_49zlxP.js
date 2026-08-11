@@ -1,0 +1,1 @@
+import{fr as e}from"./vendor-element-plus-D03lHfdh.js";import{Jt as t}from"./vendor-vue-jWSam2s6.js";var n=t(`memberPublishLayout`,()=>{let t=e(null);function n(e){t.value=e}return{setShell:n,shell:t}});export{n as t};

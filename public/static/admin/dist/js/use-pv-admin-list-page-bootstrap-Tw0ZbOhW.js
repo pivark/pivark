@@ -1,0 +1,1 @@
+import{n as e}from"./vendor-axios-x5RDkc24.js";function t(e){return n.apply(this,arguments)}function n(){return n=e(function*(e){var t;let n=(t=e.sideLoaders)==null?[]:t;yield Promise.all(n.map(e=>Promise.resolve(e()))),e.afterSideLoad&&(yield e.afterSideLoad(e.gridApi))}),n.apply(this,arguments)}export{t};

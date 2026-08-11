@@ -1,0 +1,144 @@
+{
+    "title": "企业门户主题",
+    "version": "1.4.0-portal",
+    "description": "蓝白企业门户标准版 · 工业装备行业样板（华仪智控）",
+    "author": "元舟官方",
+    "preview": "/uploads/demo-seed/carousel/slide-1.jpg",
+    "bootstrap": "5.3.8",
+    "layout": {
+        "home": "home.php",
+        "list_document": "list_document.php",
+        "view_document": "view_document.php",
+        "list_channel": "list_channel.php",
+        "list_tag": "list_tag.php",
+        "list_document_search": "list_document_search.php",
+        "list_page": "list_page.php",
+        "site_page_prefix": "list_page_",
+        "error": "error.php"
+    },
+    "demo_url": "https://demo.pivark.com",
+    "badge": "行业样板",
+    "tags": [
+        "企业门户",
+        "工业制造",
+        "产品展示"
+    ],
+    "screenshots": [
+        "/uploads/demo-seed/carousel/slide-1.jpg",
+        "/uploads/demo-seed/carousel/slide-2.jpg",
+        "/uploads/demo-seed/carousel/slide-3.jpg",
+        "/uploads/demo-seed/carousel/slide-4.jpg"
+    ],
+    "templates": {
+        "error.php": {
+            "label": "错误页",
+            "hint": "404 / 500 提示",
+            "scope": "system"
+        },
+        "home.php": {
+            "label": "企业门户首页",
+            "hint": "标准门户排版 · 轮播/关于/频道/友链",
+            "scope": "home"
+        },
+        "list_channel.php": {
+            "label": "聚合页专题",
+            "hint": "维度 Hero + 文档列表",
+            "scope": "tag"
+        },
+        "list_document.php": {
+            "label": "文档列表页",
+            "hint": "文章列表 + 标签侧栏",
+            "scope": "tag"
+        },
+        "list_document_download.php": {
+            "label": "下载中心列表",
+            "hint": "资料列表 + 下载排行侧栏",
+            "scope": "tag"
+        },
+        "list_document_gallery.php": {
+            "label": "图片中心列表（应用案例）",
+            "hint": "图集卡片网格 + 分页",
+            "scope": "tag"
+        },
+        "list_document_news.php": {
+            "label": "新闻列表（左图右文）",
+            "hint": "新闻卡片 + 分页",
+            "scope": "tag"
+        },
+        "list_document_product.php": {
+            "label": "产品展示列表",
+            "hint": "品项目录 · 分类叙事 · 行业应用",
+            "scope": "tag"
+        },
+        "list_document_search.php": {
+            "label": "站内搜索",
+            "hint": "搜索表单 + 左图右文结果",
+            "scope": "list"
+        },
+        "list_document_video.php": {
+            "label": "视频中心列表",
+            "hint": "视频卡片 + 分页",
+            "scope": "tag"
+        },
+        "list_page.php": {
+            "label": "通用单页",
+            "hint": "默认版式 · FAQ/隐私/条款等纯文案单页请选本模板；特殊布局再复制为 list_page_xxx.php",
+            "scope": "page"
+        },
+        "list_page_about.php": {
+            "label": "关于我们",
+            "hint": "Hero + 数据条 + 锚点导航",
+            "scope": "page"
+        },
+        "list_page_contact.php": {
+            "label": "联系我们",
+            "hint": "自定表单 · 地图 · 联系方式",
+            "scope": "page"
+        },
+        "list_page_products.php": {
+            "label": "产品中心",
+            "hint": "全站产品目录 · 分类筛选 · 型号检索",
+            "scope": "page"
+        },
+        "list_tag.php": {
+            "label": "维度索引",
+            "hint": "全站内容维度导航",
+            "scope": "list"
+        },
+        "view_document.php": {
+            "label": "纯文章内容页",
+            "hint": "Bootstrap 主题 · 文章详情",
+            "scope": "document"
+        },
+        "view_document_download.php": {
+            "label": "资料下载详情",
+            "hint": "下载中心条目 · 附件包前置 · 说明书正文",
+            "scope": "document"
+        },
+        "view_document_permission.php": {
+            "label": "文档详情（权限测试）",
+            "hint": "突出显示登录/会员等级与正文可见性，便于验证阅读权限",
+            "scope": "document"
+        },
+        "view_item.php": {
+            "label": "品项详情",
+            "hint": "产品详情 · 图集 · 参数 · 详细介绍（参考企业站 chanpin 详情页）",
+            "scope": "system"
+        },
+        "view_gallery_plaza.php": {
+            "label": "图集广场列表",
+            "hint": "图集插件前台广场页",
+            "scope": "page"
+        },
+        "view_video_plaza.php": {
+            "label": "视频广场列表",
+            "hint": "视频插件前台广场页",
+            "scope": "page"
+        },
+        "view_video_channel.php": {
+            "label": "视频频道页",
+            "hint": "单频道剧集列表，由 video 插件渲染",
+            "scope": "page"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+﻿/data/runtime/
+/data/cache/
+/data/site.env
+/public/uploads/
+/vendor/
+node_modules/
+

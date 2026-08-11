@@ -1,0 +1,1 @@
+var e={align:`center`,headerAlign:`center`},t={align:`center`,headerAlign:`center`},n={align:`right`,headerAlign:`center`},r={align:`left`,headerAlign:`left`,showOverflow:`tooltip`},i={align:`left`,headerAlign:`center`},a={align:`right`,headerAlign:`right`,fixed:`right`},o={align:`left`,headerAlign:`left`};export{a,n as i,t as n,o,e as r,r as s,i as t};

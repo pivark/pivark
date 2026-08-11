@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" role="img" aria-label="mockup">
+  <rect width="640" height="280" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <text x="320" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#111827">&#x8bbf;&#x5ba2;&#x8bc4;&#x8bba;&#x4e0e;&#x56de;&#x590d;&#x6548;&#x679c;</text>
+  <rect x="24" y="44" width="592" height="72" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="36" y="56" width="72" height="48" rx="6" fill="url(#g0)"/>
+  <rect x="120" y="64" width="200" height="10" rx="4" fill="#cbd5e1"/>
+  <rect x="120" y="82" width="140" height="8" rx="4" fill="#e2e8f0"/>
+  <rect x="24" y="132" width="592" height="72" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="36" y="144" width="72" height="48" rx="6" fill="url(#g1)"/>
+  <rect x="120" y="152" width="200" height="10" rx="4" fill="#cbd5e1"/>
+  <rect x="120" y="170" width="140" height="8" rx="4" fill="#e2e8f0"/>
+  <defs>
+    <linearGradient id="g0" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#ec4899"/></linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+  </defs>
+</svg>

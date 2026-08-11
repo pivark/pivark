@@ -1,0 +1,10 @@
+# PivArk Community — 发行包根占位（对齐 Dede / Discuz / Eyou）
+# 根目录不必写伪静态：/install/ 使用 install/index.php（DirectoryIndex）
+# 安装完成后程序会写入「动态入口」规则（/admin、前台走 index.php）；美化 URL/静态请自行配置
+# 库连接写入 data/site.env；勿依赖根目录 .env。
+
+<IfModule mod_authz_core.c>
+    <FilesMatch "^\.env">
+        Require all denied
+    </FilesMatch>
+</IfModule>

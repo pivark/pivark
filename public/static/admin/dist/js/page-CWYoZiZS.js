@@ -1,0 +1,1 @@
+var e={login:`登录`,loginSubtitle:`请输入管理员账号和密码登录后台`,register:`注册`,codeLogin:`验证码登录`,qrcodeLogin:`二维码登录`,forgetPassword:`忘记密码`,profile:`个人中心`},t={title:`概览`,analytics:`分析页`,workspace:`工作台`},n={auth:e,dashboard:t};export{e as auth,t as dashboard,n as default};

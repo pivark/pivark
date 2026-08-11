@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="wireframe">
+  <rect width="640" height="320" rx="12" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="320" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0f172a">&#x8be6;&#x60c5;&#x9875;&#x5e95;&#x90e8;&#x63d2;&#x5165;&#x8bc4;&#x8bba;</text>
+  <rect x="24" y="44" width="592" height="36" rx="6" fill="#e2e8f0"/>
+  <text x="40" y="67" font-family="ui-monospace,monospace" font-size="11" fill="#334155">&#x7b;pv:doc_comment&#x7d;</text>
+  <rect x="24" y="92" width="592" height="180" rx="8" fill="#fff" stroke="#94a3b8" stroke-dasharray="6 4"/>
+  <text x="320" y="190" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">&#x4e3b;&#x9898;&#x6e32;&#x67d3;&#x8f93;&#x51fa;&#x533a;</text>
+</svg>

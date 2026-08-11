@@ -1,0 +1,7 @@
+{
+  "title": "某某科技 · PivArk 建站安装",
+  "subtitle": "由某某科技提供实施与技术支持",
+  "logo_url": "/uploads/demo-seed/partners/example.svg",
+  "support_url": "https://example.com/support",
+  "footer_html": "<p style=\"text-align:center;color:#909399;font-size:12px;margin-top:24px;\">渠道定制页脚：可写公司名、备案号、客服电话等（支持简单 HTML）</p>"
+}

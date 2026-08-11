@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" role="img" aria-label="中国移动">
+  <rect width="200" height="56" rx="6" fill="#0094D9"/>
+  <path d="M28 38c8-14 18-20 28-22-6 10-6 18 0 22z" fill="#8CC63F" opacity=".95"/>
+  <text x="118" y="35" text-anchor="middle" fill="#fff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" font-weight="700">中国移动</text>
+</svg>

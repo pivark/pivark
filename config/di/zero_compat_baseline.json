@@ -1,0 +1,9 @@
+{
+    "recorded_at": "2026-07-12T00:00:00+08:00",
+    "counts": {
+        "di_files_app": 480,
+        "di_files_weapp": 332,
+        "trait_files_app": 592,
+        "trait_files_weapp": 18
+    }
+}

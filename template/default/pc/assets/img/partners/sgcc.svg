@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" role="img" aria-label="国家电网">
+  <rect width="200" height="56" rx="6" fill="#006847"/>
+  <circle cx="32" cy="28" r="10" fill="#F5C518"/>
+  <text x="118" y="35" text-anchor="middle" fill="#fff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" font-weight="700">国家电网</text>
+</svg>

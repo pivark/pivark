@@ -1,0 +1,47 @@
+.pv-float-contact--edge {
+  right: 0;
+}
+
+.pv-fc-edge__tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pv-fc-edge__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  padding: 10px 6px;
+  color: #fff;
+  cursor: pointer;
+  background: var(--pv-fc-color, #1e9fff);
+  border: none;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+  text-decoration: none;
+  transition: filter 0.2s, padding 0.2s;
+}
+
+.pv-fc-edge__tab span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  writing-mode: vertical-rl;
+}
+
+.pv-fc-edge__tab:hover,
+.pv-fc-edge__tab:focus-visible {
+  filter: brightness(1.08);
+  padding-right: 10px;
+}
+
+.pv-fc-edge__tab--qq { background: #039be5; }
+.pv-fc-edge__tab--wechat { background: #059669; }
+.pv-fc-edge__tab--vip { background: #e11d48; }
+.pv-fc-edge__tab--phone { background: #4f46e5; }
+.pv-fc-edge__tab.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}

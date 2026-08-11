@@ -1,0 +1,70 @@
+.pv-float-contact--dock {
+  right: 16px;
+  left: auto;
+  width: auto;
+}
+
+.pv-fc-dock__bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+  max-width: min(92vw, 420px);
+  padding: 8px 10px;
+  background: rgba(15, 23, 42, 0.88);
+  border-radius: 999px;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.28);
+  backdrop-filter: blur(8px);
+}
+
+.pv-fc-dock__item {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f8fafc;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pv-fc-dock__item:hover,
+.pv-fc-dock__item:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.pv-fc-dock__item--qq { background: rgba(3, 155, 229, 0.55); }
+.pv-fc-dock__item--wechat { background: rgba(5, 150, 105, 0.55); }
+.pv-fc-dock__item--vip { background: rgba(225, 29, 72, 0.55); }
+
+.pv-fc-dock__icon {
+  display: flex;
+  line-height: 1;
+}
+
+.pv-fc-dock__text {
+  max-width: 5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 767.98px) {
+  .pv-fc-dock__bar {
+    max-width: calc(100vw - 24px);
+  }
+
+  .pv-fc-orb {
+    width: 46px;
+    height: 46px;
+  }
+
+  .pv-fc-card {
+    width: min(92vw, 260px);
+  }
+}

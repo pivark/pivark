@@ -1,0 +1,1 @@
+var e=[10,20,50,100],t=`sizes, prev, pager, next`,n=`total, sizes, prev, pager, next`;function r(e){let r=(e==null?void 0:e.mobile)===!0,i=(e==null?void 0:e.showSizes)!==!1,a=(e==null?void 0:e.showTotalInPager)!==!1;return r||!i?a?`total, prev, pager, next`:`prev, pager, next`:a?n:t}export{r as n,e as t};

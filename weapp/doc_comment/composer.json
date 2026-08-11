@@ -1,0 +1,17 @@
+{
+    "name": "pivark/weapp-comment",
+    "description": "PivArk official comment weapp plugin (composer pilot)",
+    "type": "pivark-weapp",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "weapp\\doc_comment\\": ""
+        }
+    },
+    "extra": {
+        "pivark": {
+            "identifier": "doc_comment",
+            "manifest": "plugin.json"
+        }
+    }
+}

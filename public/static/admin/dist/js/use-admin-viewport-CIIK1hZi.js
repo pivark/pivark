@@ -1,0 +1,1 @@
+import{ct as e,dn as t,it as n}from"./vendor-element-plus-D03lHfdh.js";import{c as r}from"../jse/index-index-DAw1X7_W.js";function i(){let i=e(n),{isMobile:a}=r(),o=t(()=>i.smaller(`md`).value),s=t(()=>i.between(`md`,`lg`).value);return{isMobile:o,isTablet:s,isCompact:t(()=>o.value||s.value),isDesktop:t(()=>i.greaterOrEqual(`lg`).value),layoutIsMobile:a}}export{i as t};

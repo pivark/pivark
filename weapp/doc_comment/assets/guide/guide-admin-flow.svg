@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" role="img" aria-label="admin flow">
+  <rect width="720" height="200" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+  <text x="360" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#9a3412">&#x540e;&#x53f0;&#x914d;&#x7f6e;&#x6d41;&#x7a0b;</text>
+  <rect x="24" y="48" width="150" height="120" rx="8" fill="#fff" stroke="#fb923c" stroke-width="2"/>
+  <text x="99" y="98" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#c2410c">&#x542f;&#x7528;&#x63d2;&#x4ef6;</text>
+  <path d="M178 108 H194" stroke="#fb923c" stroke-width="2"/>
+  <rect x="198" y="48" width="150" height="120" rx="8" fill="#fff" stroke="#fb923c" stroke-width="2"/>
+  <text x="273" y="98" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#c2410c">&#x57fa;&#x7840;&#x8bbe;&#x7f6e;</text>
+  <path d="M352 108 H368" stroke="#fb923c" stroke-width="2"/>
+  <rect x="372" y="48" width="150" height="120" rx="8" fill="#fff" stroke="#fb923c" stroke-width="2"/>
+  <text x="447" y="98" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#c2410c">&#x6a21;&#x677f;&#x52a0;&#x6807;&#x7b7e;</text>
+  <path d="M526 108 H542" stroke="#fb923c" stroke-width="2"/>
+  <rect x="546" y="48" width="150" height="120" rx="8" fill="#fff" stroke="#fb923c" stroke-width="2"/>
+  <text x="621" y="98" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#c2410c">&#x5ba1;&#x6838;&#x7ba1;&#x7406;</text>
+</svg>

@@ -1,0 +1,1 @@
+function e(e){var t,n,r,i,a;let o=(t=e.data)==null?e:t,s=o.data;return{list:(n=(r=o.list)==null?s==null?void 0:s.list:r)==null?[]:n,total:Number((i=(a=o.total)==null?s==null?void 0:s.total:a)==null?0:i)}}export{e as t};

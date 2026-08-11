@@ -1,0 +1,154 @@
+/* 全屏居中弹层 + 全站悼念（SiteOverlayAdService） */
+
+html.pv-site-mourning-active {
+  filter: grayscale(100%);
+}
+
+html.pv-site-mourning-active body {
+  background-color: #111;
+}
+
+.pv-site-mourning {
+  pointer-events: none;
+}
+
+.pv-site-mourning__bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99990;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 10px 16px;
+  color: #f5f5f5;
+  background: rgba(0, 0, 0, 0.92);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.pv-site-mourning__photo {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+.pv-site-mourning__text {
+  text-align: center;
+}
+
+.pv-site-mourning__title {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.pv-site-mourning__subtitle {
+  margin: 4px 0 0;
+  font-size: 12px;
+  opacity: 0.82;
+}
+
+.pv-site-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99980;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.pv-site-overlay[hidden] {
+  display: none !important;
+}
+
+.pv-site-overlay__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.pv-site-overlay__panel {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 560px);
+  max-height: min(88vh, 720px);
+  overflow: auto;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+}
+
+.pv-site-overlay__close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 999px;
+  font-size: 22px;
+  line-height: 1;
+  color: #666;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.pv-site-overlay__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.pv-site-overlay__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 52vh;
+  object-fit: cover;
+}
+
+.pv-site-overlay__text {
+  padding: 16px 18px 20px;
+}
+
+.pv-site-overlay__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pv-site-overlay__subtitle {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.pv-site-overlay__cta {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  background: #1e9fff;
+}
+
+@media (max-width: 640px) {
+  .pv-site-mourning__bar {
+    flex-direction: column;
+    gap: 6px;
+    min-height: 56px;
+  }
+
+  .pv-site-overlay__panel {
+    width: min(96vw, 420px);
+  }
+}

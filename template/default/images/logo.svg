@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 48" role="img" aria-label="HUAYI CONTROL">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="6" width="36" height="36" rx="8" fill="url(#g)"/>
+  <text x="20" y="31" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="16" font-weight="700">HY</text>
+  <text x="48" y="29" fill="#0f172a" font-family="system-ui,sans-serif" font-size="14" font-weight="700">HUAYI CONTROL</text>
+</svg>

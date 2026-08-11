@@ -1,0 +1,117 @@
+<?php
+/**
+ * 发行版数据导出 profile（内核 SSOT；插件经 DataExportExtensionRegistry 扩展）
+ *
+ * approval: none | on_deny | always（企业版预留，发行版忽略）
+ * kind: export | import（默认 export）
+ */
+return [
+    'member.list' => [
+        'label'      => '会员列表',
+        'permission' => 'admin.member.export',
+        'path'       => 'members/export',
+        'modes'      => ['selected', 'filter'],
+        'max_rows'   => 50000,
+        'approval'   => 'none',
+        'audit_key'  => 'admin.member.export',
+    ],
+    'user.list' => [
+        'label'      => '用户列表',
+        'permission' => 'admin.user.export',
+        'path'       => 'users/export',
+        'modes'      => ['all'],
+        'max_rows'   => 50000,
+        'approval'   => 'none',
+        'audit_key'  => 'admin.user.export',
+    ],
+    'user.import' => [
+        'label'      => '用户导入',
+        'kind'       => 'import',
+        'permission' => 'admin.user.import',
+        'path'       => 'users/import',
+        'max_rows'   => 50000,
+        'audit_key'  => 'admin.user.import',
+    ],
+    'document.list' => [
+        'label'      => '文档列表',
+        'permission' => 'admin.document.export',
+        'path'       => 'documents/export',
+        'modes'      => ['all'],
+        'max_rows'   => 50000,
+        'approval'   => 'none',
+        'audit_key'  => 'admin.document.export',
+    ],
+    'document.list_json' => [
+        'label'      => '文档列表 JSON',
+        'permission' => 'admin.document.export',
+        'path'       => 'documents/export-json',
+        'modes'      => ['all'],
+        'max_rows'   => 50000,
+        'approval'   => 'none',
+        'audit_key'  => 'admin.document.export',
+    ],
+    'document.import' => [
+        'label'      => '文档 CSV 导入',
+        'kind'       => 'import',
+        'permission' => 'admin.document.import',
+        'path'       => 'documents/import',
+        'max_rows'   => 50000,
+        'audit_key'  => 'admin.document.import',
+    ],
+    'document.import_json' => [
+        'label'      => '文档 JSON 导入',
+        'kind'       => 'import',
+        'permission' => 'admin.document.import',
+        'path'       => 'documents/import-json',
+        'max_rows'   => 50000,
+        'audit_key'  => 'admin.document.import',
+    ],
+    'log.list' => [
+        'label'      => '操作日志',
+        'permission' => 'admin.log.list',
+        'path'       => 'logs/export',
+        'modes'      => ['filter'],
+        'max_rows'   => 50000,
+        'approval'   => 'none',
+        'audit_key'  => 'admin.log.list',
+    ],
+    'item.list' => [
+        'label'      => '品项列表',
+        'permission' => 'admin.item.export',
+        'path'       => 'items/export',
+        'modes'      => ['selected', 'filter', 'all'],
+        'max_rows'   => 50000,
+        'transport'  => 'async',
+        'approval'   => 'none',
+        'audit_key'  => 'admin.item.export',
+        'async'      => [
+            'start'    => 'items/export-async/start',
+            'step'     => 'items/export-async/step',
+            'download' => 'items/export-async/download',
+        ],
+    ],
+    'form.submissions' => [
+        'label'      => '表单提交',
+        'permission' => 'admin.form.list',
+        'path'       => 'site-forms/submissions/export',
+        'modes'      => ['selected', 'filter', 'all'],
+        'max_rows'   => 10000,
+        'transport'  => 'async',
+        'audit_key'  => 'admin.form.list',
+        'async'      => [
+            'start'    => 'site-forms/submissions/export-async/start',
+            'step'     => 'site-forms/submissions/export-async/step',
+            'download' => 'site-forms/submissions/export-async/download',
+            'method'   => 'post',
+        ],
+    ],
+    'enterprise_resource.list' => [
+        'label'      => '企业经营资料',
+        'permission' => 'admin.media.list',
+        'path'       => 'media/enterprise-export',
+        'modes'      => ['filter'],
+        'max_rows'   => 50000,
+        'approval'   => 'none',
+        'audit_key'  => 'admin.media.list',
+    ],
+];

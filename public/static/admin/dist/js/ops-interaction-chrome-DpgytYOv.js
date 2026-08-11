@@ -1,0 +1,1 @@
+function e(e){let t=String(e==null?``:e).trim();return t===``?!1:/^\/site\/(stats|form|ads|link)(\/|$)/.test(t)||/^\/system\/float-contact(\/|$)/.test(t)}export{e as t};

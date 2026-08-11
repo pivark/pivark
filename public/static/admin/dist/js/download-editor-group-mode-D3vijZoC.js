@@ -1,0 +1,1 @@
+var e=`pv-download-editor-group-mode`;function t(e){return String(e==null?``:e).trim()===`by_platform`?`by_platform`:`by_file`}function n(){try{return t(localStorage.getItem(e))}catch(e){return`by_file`}}function r(n){try{localStorage.setItem(e,t(n))}catch(e){}}function i(e){return e===`by_platform`?`按网盘分文件`:`按文件分网盘`}export{r as i,n,t as r,i as t};

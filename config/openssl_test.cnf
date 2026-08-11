@@ -1,0 +1,17 @@
+# Minimal OpenSSL config for Windows PHP key generation in QA scripts
+openssl_conf = openssl_init
+
+[openssl_init]
+providers = provider_sect
+
+[provider_sect]
+default = default_sect
+
+[default_sect]
+activate = 1
+
+[ req ]
+default_bits = 2048
+distinguished_name = req_distinguished_name
+
+[ req_distinguished_name ]

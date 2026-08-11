@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" role="img" aria-label="中国电信">
+  <rect width="200" height="56" rx="6" fill="#00A650"/>
+  <circle cx="32" cy="28" r="14" fill="none" stroke="#fff" stroke-width="3" opacity=".9"/>
+  <text x="118" y="35" text-anchor="middle" fill="#fff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" font-weight="700">中国电信</text>
+</svg>

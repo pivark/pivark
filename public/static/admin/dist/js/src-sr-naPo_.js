@@ -1,0 +1,1 @@
+import{wn as e,xn as t}from"./vendor-element-plus-D03lHfdh.js";import{r as n}from"./vendor-axios-x5RDkc24.js";import{t as r}from"./vendor-iconify-CsJE_02k.js";function i(i){return t({name:`Icon-${i}`,setup(t,{attrs:a}){return()=>e(r,n(n({icon:i},t),a))}})}export{i as t};

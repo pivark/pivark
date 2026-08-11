@@ -1,0 +1,1 @@
+function e(e,t){let n=Number(t);!Number.isFinite(n)||n<=0||e.push({path:`/member/list`,query:{drawer:`edit`,id:String(n)}})}export{e as t};

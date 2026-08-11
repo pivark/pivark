@@ -1,0 +1,105 @@
+{
+    "identifier": "doc_comment",
+    "name": "文档评论",
+    "version": "1.0.0",
+    "api_version": "1.0",
+    "edition": "community",
+    "description": "文档评论、回复与点赞；可按会员权限、敏感词过滤，并支持后台审核。",
+    "author": "元舟 PivArk 官方",
+    "author_contact": "https://pivark.com",
+    "icon": "/weapp/doc_comment/assets/icon.svg",
+    "color": "#16baaa",
+    "tags": [
+        "doc_comment",
+        "interaction"
+    ],
+    "permissions": [
+        "plugin.doc_comment.use"
+    ],
+    "commercial": {
+        "model": "free",
+        "price": 0,
+        "period_days": null,
+        "commercial_profile": "policy_flexible",
+        "skus": [
+            {
+                "sku_id": "official_permanent_free",
+                "name": "永久免费",
+                "billing_type": "free",
+                "price": 0
+            }
+        ],
+        "policy": {
+            "active_sku": "official_permanent_free"
+        }
+    },
+    "distribution": {
+        "mode": "source_open",
+        "license_spdx": "MIT",
+        "allows_secondary_dev": true,
+        "allows_redistribution": true,
+        "encryption": "none",
+        "notice_file": "NOTICE.md"
+    },
+    "admin": {
+        "home_route": "/weapp/host/doc_comment/settings",
+        "route": "/weapp/host/doc_comment/settings",
+        "title": "评论管理",
+        "ui": {
+            "mode": "core_vue",
+            "spa_path": "/weapp/host/doc_comment/settings"
+        }
+    },
+    "dependencies": [],
+    "requires": {
+        "pivark_core": ">=1.6.0 <2.0.0",
+        "php": ">=8.1"
+    },
+    "config_key_prefixes": [
+        "comment_"
+    ],
+    "package": "pivark/doc_comment",
+    "kind": "document-addon",
+    "publisher_type": "official",
+    "vendor": "pivark",
+    "slug": "doc_comment",
+    "surfaces": {
+        "admin": [
+            "plugin_home"
+        ],
+        "document_editor": {
+            "enabled": false,
+            "slot": "tab",
+            "tab_label": "评论设置",
+            "tab_order": 45
+        },
+        "frontend": {
+            "template_tags": [
+                {
+                    "name": "doc_comment"
+                }
+            ]
+        }
+    },
+    "pivark_policy": {
+        "install_default": true,
+        "upload_replace_protected": true,
+        "entitlement_mirror": true,
+        "schema_pilot": true,
+        "enhancement_pack": {
+            "enabled": true,
+            "hint": "文档评论与审核",
+            "default": true
+        },
+        "community_release": {
+            "bundled_plain": true,
+            "enhancement_pack": true
+        },
+        "taxonomy": {
+            "commercial_tier": "B2",
+            "business_domain": "-",
+            "editor_audience": "external",
+            "nav_bucket": "none"
+        }
+    }
+}

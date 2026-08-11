@@ -1,0 +1,1 @@
+var e=`--pivark-content-height`,t=`--pivark-content-width`,n=`--pivark-header-height`,r=`--pivark-footer-height`,i=`__pivark_main_content`,a=`pivark`;export{a,n as i,t as n,i as o,r,e as t};

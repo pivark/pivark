@@ -1,0 +1,57 @@
+{
+    "buttonLabel": "联系",
+    "wechatQr": "https:\/\/www.pivark.cn\/static\/common\/js\/pivark-admin-contact\/wechat-qr.jpg",
+    "wechatTip": "微信扫码咨询",
+    "wechatQrSource": "\/uploads\/20260604\/9a534426e86a405e343ac943bf7deeb6.jpg",
+    "promoSlots": [
+        {
+            "id": "docs",
+            "title": "使用文档",
+            "desc": "安装、升级与二次开发",
+            "href": "https:\/\/www.pivark.cn\/docs\/",
+            "cta": "打开文档",
+            "tone": "sky"
+        },
+        {
+            "id": "license",
+            "title": "商业授权",
+            "desc": "去版权、升级与官方支持",
+            "href": "https:\/\/www.pivark.cn\/pricing",
+            "cta": "了解授权",
+            "tone": "teal"
+        }
+    ],
+    "panels": [
+        {
+            "id": "consult",
+            "title": "技术服务咨询",
+            "body": [
+                "安装部署与升级问题排查",
+                "主题 \/ 插件定制与系统集成",
+                "商业授权与去版权咨询"
+            ],
+            "note": "技术服务为有偿服务，费用按项目复杂度约定。",
+            "ctaLabel": "打开官网联系页",
+            "ctaHref": "https:\/\/www.pivark.cn\/contact"
+        },
+        {
+            "id": "docs",
+            "title": "使用文档",
+            "body": [
+                "安装、升级、模板与插件开发文档",
+                "对外文档库与 CHANGELOG"
+            ],
+            "ctaLabel": "打开文档",
+            "ctaHref": "https:\/\/www.pivark.cn\/docs\/"
+        },
+        {
+            "id": "site",
+            "title": "PivArk 官网",
+            "body": [
+                "产品介绍、版本对比与商业授权"
+            ],
+            "ctaLabel": "打开官网",
+            "ctaHref": "https:\/\/www.pivark.cn"
+        }
+    ]
+}

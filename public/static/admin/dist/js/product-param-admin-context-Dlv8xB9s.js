@@ -1,0 +1,1 @@
+import{c as e,i as t,s as n}from"./product-param-option-B5kuQZeR.js";var r=Symbol(`product-param-admin`);function i(t,n=[]){return e(t,n)}function a(e,t){return e===`multi_select`?n(t):t}function o(e,n){return e===`multi_select`?t(n):String(n==null?``:n).trim()}export{i,a as n,o as r,r as t};

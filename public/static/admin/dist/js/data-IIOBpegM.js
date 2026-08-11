@@ -1,0 +1,1 @@
+var e=[`scaffold`,`import`],t=`新建插件：选型 → 填字段 → 校验清单 → 下载脚手架包；导入插件：上传 zip 并审包安装。`;export{e as n,t};

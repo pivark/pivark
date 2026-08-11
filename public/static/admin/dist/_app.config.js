@@ -1,0 +1,1 @@
+window._PIVARK_ADMIN_APP_CONF_={"VITE_GLOB_API_URL":"/api/v1/admin"};Object.freeze(window._PIVARK_ADMIN_APP_CONF_);Object.defineProperty(window,"_PIVARK_ADMIN_APP_CONF_",{configurable:false,writable:false,});

@@ -1,0 +1,53 @@
+.pv-float-contact--stack {
+  right: 12px;
+}
+
+.pv-fc-stack__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pv-fc-stack__item {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-width: 148px;
+  padding: 8px 12px;
+  color: #fff;
+  cursor: pointer;
+  background: var(--pv-fc-color, #1e9fff);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.14);
+  text-decoration: none;
+  transition: filter 0.2s, transform 0.2s;
+}
+
+.pv-fc-stack__item:hover,
+.pv-fc-stack__item:focus-visible {
+  filter: brightness(1.06);
+  transform: translateX(-2px);
+}
+
+.pv-fc-stack__item--qq { background: #039be5; }
+.pv-fc-stack__item--wechat { background: #059669; }
+.pv-fc-stack__item--vip { background: #e11d48; }
+.pv-fc-stack__item--phone { background: #4f46e5; }
+.pv-fc-stack__item--email { background: #d97706; }
+
+.pv-fc-stack__icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.pv-fc-stack__label {
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}

@@ -1,0 +1,1 @@
+import{pn as e,xn as t,xr as n,zn as r}from"./vendor-element-plus-D03lHfdh.js";import{r as i}from"./vendor-axios-x5RDkc24.js";import{t as a}from"./fallback-CvvBGbBR.js";var o=t(i(i({},{name:`Fallback500Demo`}),{},{__name:`internal-error`,setup(t){return(t,i)=>(r(),e(n(a),{status:`500`}))}}));export{o as default};

@@ -1,0 +1,68 @@
+/* ── 样式：悬浮球菜单 (fab) — 常显方块竖条 ── */
+.pv-float-contact--fab {
+  right: 0;
+  overflow: visible;
+}
+
+.pv-fc-fab__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pv-fc-fab__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  min-height: 64px;
+  padding: 8px 6px;
+  overflow: visible;
+  color: #fff;
+  cursor: pointer;
+  background: var(--pv-fc-color, #1e9fff);
+  border: none;
+  border-radius: 4px 0 0 4px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.16);
+  text-decoration: none;
+  transition: filter 0.2s, transform 0.2s;
+}
+
+.pv-fc-fab__item:hover,
+.pv-fc-fab__item:focus-visible {
+  filter: brightness(1.06);
+  transform: translateX(-2px);
+}
+
+.pv-fc-fab__item.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.pv-fc-fab__icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  line-height: 1;
+}
+
+.pv-fc-fab__icon svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.pv-fc-fab__label {
+  max-width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+}

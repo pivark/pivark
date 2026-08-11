@@ -1,0 +1,1 @@
+import{Un as e,pn as t,xn as n,zn as r}from"./vendor-element-plus-D03lHfdh.js";import{r as i}from"./vendor-axios-x5RDkc24.js";var a=n(i(i({},{name:`ParentView`}),{},{__name:`parent-view`,setup(n){return(n,i)=>{let a=e(`router-view`);return r(),t(a)}}}));export{a as default};

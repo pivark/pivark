@@ -1,0 +1,6 @@
+# PivArk common/vendor static — Apache direct serve.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|mjs|woff2?|ttf|otf|eot|svg|png|jpe?g|gif|webp|ico|map)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>

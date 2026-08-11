@@ -1,0 +1,34 @@
+<?php
+/**
+ * 元舟 PivArk — /admin 物理入口模板（materialize 到站点根 admin/index.php）
+ *
+ * 勿在 dig 的 Vue 仓 admin/ 下落盘；由 AdminPhysicalEntryService 在客户站生成。
+ * 镜像 install/index.php：DirectoryIndex 可进，不依赖 Nginx 伪静态粘贴。
+ */
+$__pivarkRoot = dirname(__DIR__);
+$__pivarkGate = $__pivarkRoot . '/install/bootstrap/php_version_gate.php';
+if (is_file($__pivarkGate)) {
+    require_once $__pivarkGate;
+}
+
+$__pivarkPreflight = $__pivarkRoot . '/install/bootstrap/preflight.php';
+if (is_file($__pivarkPreflight)) {
+    require_once $__pivarkPreflight;
+    pivark_preflight_abort_if_unmet($__pivarkRoot . DIRECTORY_SEPARATOR);
+}
+
+require_once $__pivarkRoot . '/bootstrap/admin_entry/path_info.php';
+
+$path = pivark_admin_resolve_path_info($_SERVER, 'admin');
+$query = parse_url((string) ($_SERVER['REQUEST_URI'] ?? ''), PHP_URL_QUERY);
+$rebuilt = $path . (is_string($query) && $query !== '' ? ('?' . $query) : '');
+
+$_SERVER['SCRIPT_FILENAME'] = $__pivarkRoot . DIRECTORY_SEPARATOR . 'index.php';
+$_SERVER['SCRIPT_NAME']     = '/index.php';
+$_SERVER['PHP_SELF']        = '/index.php';
+$_SERVER['PATH_INFO']       = $path;
+$_SERVER['REQUEST_URI']     = $rebuilt;
+unset($_SERVER['REDIRECT_URL'], $_SERVER['REDIRECT_QUERY_STRING'], $_SERVER['ORIG_PATH_INFO']);
+
+chdir($__pivarkRoot);
+require $__pivarkRoot . DIRECTORY_SEPARATOR . 'index.php';

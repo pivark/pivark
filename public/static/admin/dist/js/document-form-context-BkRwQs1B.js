@@ -1,0 +1,1 @@
+var e=Symbol(`documentForm`);export{e as t};

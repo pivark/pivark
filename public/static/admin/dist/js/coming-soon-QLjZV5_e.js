@@ -1,0 +1,1 @@
+import{pn as e,xn as t,xr as n,zn as r}from"./vendor-element-plus-D03lHfdh.js";import{t as i}from"./fallback-CvvBGbBR.js";var a=t({__name:`coming-soon`,setup(t){return(t,a)=>(r(),e(n(i),{status:`coming-soon`}))}});export{a as default};

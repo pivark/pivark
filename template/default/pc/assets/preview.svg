@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="gp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#gp)"/>
+  <text x="48" y="180" fill="#fff" font-family="system-ui,sans-serif" font-size="36" font-weight="700">PivArk</text>
+  <text x="48" y="220" fill="#fde68a" font-family="system-ui,sans-serif" font-size="16">§Á˜Q;˜</text>
+</svg>

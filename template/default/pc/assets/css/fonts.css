@@ -1,0 +1,32 @@
+/**
+ * 门户正文字体（本地 woff2，无 Google Fonts CDN）
+ * 安装：php devtools/scripts/install_theme_noto_font_cli.php demo
+ */
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/noto-sans-sc-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/noto-sans-sc-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/noto-sans-sc-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/noto-sans-sc-700.woff2") format("woff2");
+}
