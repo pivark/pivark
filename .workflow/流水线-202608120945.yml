@@ -1,0 +1,115 @@
+version: "1.0"
+name: 测试、构建、上传、发布、部署到自有主机
+displayName: 测试、构建、上传、发布、部署到自有主机
+stages:
+- name: 测试
+  displayName: 测试
+  strategy: naturally
+  trigger: auto
+  steps:
+  - step: ut@php
+    name: ""
+    displayName: PHP 单元测试
+    phpVersion: "7.4"
+    commands:
+    - '# 安装依赖'
+    - composer install
+    - '# Php单元测试默认命令'
+    - phpunit --testdox-html index.html
+    report:
+      index: index.html
+    checkpoints: {}
+    notify: []
+    strategy:
+      retry: "0"
+      resource:
+        cpu: "2"
+        memory: "4"
+- name: 构建
+  displayName: 构建
+  strategy: naturally
+  trigger: auto
+  steps:
+  - step: build@php
+    name: ""
+    displayName: PHP 构建
+    phpVersion: "8.0"
+    commands:
+    - '# 设置全局composer依赖仓库地址'
+    - composer config -g secure-http false
+    - composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+    - composer install
+    - php -v
+    artifacts:
+    - name: BUILD_ARTIFACT
+      path:
+      - ./
+      type: .tar.gz
+    notify: []
+    strategy:
+      retry: "0"
+      resource:
+        cpu: "2"
+        memory: "4"
+- name: 上传
+  displayName: 上传
+  strategy: naturally
+  trigger: auto
+  steps:
+  - step: publish@general_artifacts
+    name: ""
+    displayName: 上传制品
+    dependArtifact: BUILD_ARTIFACT
+    artifactName: output
+    notify: []
+    strategy:
+      retry: "0"
+      resource:
+        cpu: "2"
+        memory: "4"
+- name: 发布
+  displayName: 发布
+  strategy: naturally
+  trigger: auto
+  steps:
+  - step: publish@release_artifacts
+    name: ""
+    displayName: 发布
+    dependArtifact: output
+    version: 1.0.0.0
+    autoIncrement: true
+    notify: []
+    strategy:
+      retry: "0"
+      resource:
+        cpu: "2"
+        memory: "4"
+- name: 部署
+  displayName: 部署
+  strategy: naturally
+  trigger: auto
+  steps:
+  - step: deploy@agent
+    name: ""
+    displayName: 主机部署
+    deployArtifact:
+    - name: output
+      target: "~/gitee_go/deploy"
+      source: artifact
+      dependArtifact: ""
+      artifactRepository: default
+      artifactName: output
+      artifactVersion: latest
+    script: |-
+      # 请在此输入部署脚本，如启动Java应用如下
+      # nohup java -jar test.jar &gt; nohup.out &amp;
+       echo 'Hello Gitee!'
+    hostGroupID: {}
+    notify: []
+    strategy:
+      retry: "0"
+triggers:
+  trigger: manual
+notify: []
+strategy:
+  blocking: true
