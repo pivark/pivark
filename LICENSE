@@ -1,0 +1,44 @@
+# PivArk Community 开源许可
+
+Copyright (c) 2024-2026 pivark.com. All rights reserved.
+
+正式名称：**PivArk Community 开源许可**（全文以本文件为准）。本许可为产品定制条款（source-available），**不是** Apache-2.0 / MIT 等 OSI 标准协议。
+
+## 许可范围
+
+本仓库（元舟 PivArk Community / 开源版）源码在遵守下列条款的前提下，允许学习、研究、修改、私有部署与**商业使用**。
+
+### 允许
+
+- 克隆、安装、运行与二次开发（含私有部署、向客户提供建站服务）
+- 修改源码并贡献回上游（见 [CONTRIBUTING.md](CONTRIBUTING.md)）
+- 在遵守本许可的前提下分发修改后的开源版本
+
+### 限制（Community 商业使用须保留版权）
+
+- **须保留 PivArk 版权标识**：前台页脚等位置须保留「Powered by 元舟 PivArk」或同等可见标识；后台保存站点页脚版权时系统会自动合并该标识
+- **不得移除或篡改**源码文件头中的版权声明
+- **去版权、核心升级包下载、Enterprise 模块、加密插件与官方商业 SKU** 须另行购买 pivark.com 商业授权
+- 不得将开源版伪装为已获商业授权的版本对外宣传
+
+### 限制（其他）
+
+- 不得规避 `install.lock`、授权激活或版本清单中的升级授权校验
+
+### 商业授权与著作权
+
+购买 pivark.com 商业授权，授予约定范围内的使用、去版权、升级等权利，**不构成**对本软件源码著作权的转让。著作权仍属产品方（pivark.com）。
+
+商业使用、OEM、Enterprise 能力与合作请联系：[https://pivark.com](https://pivark.com)
+
+### 免责声明
+
+本软件按「现状」提供，不提供任何明示或暗示的保证。作者与版权方不对使用本软件造成的任何损失承担责任。
+
+---
+
+## Third-Party Components
+
+本仓库包含第三方开源组件（如 ThinkPHP、Vue 生态等），各自遵循其原始许可证。详见各组件目录内的 LICENSE 文件。
+
+`admin/` 子目录基于 [Vben Admin](https://github.com/vbenjs/vue-vben-admin) 等开源项目，遵循其对应许可证（见 `admin/LICENSE`）。产品本体协议与第三方组件协议相互独立。

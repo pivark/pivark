@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="一个后台，多端分发">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef5fb"/>
+      <stop offset="100%" stop-color="#e7eef6"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <text x="480" y="42" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#1a2b3c">一个后台，多端分发</text>
+  <text x="480" y="72" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="13" fill="#5a6b7c">门户 · 会员 · 商城同源 · 经营模块按需授权 · REST API 枢纽</text>
+  <!-- spokes -->
+  <g stroke="#9eb4c8" stroke-width="1.5" stroke-dasharray="4 5" fill="none">
+    <line x1="480" y1="300" x2="480" y2="130"/>
+    <line x1="480" y1="300" x2="640" y2="155"/>
+    <line x1="480" y1="300" x2="740" y2="240"/>
+    <line x1="480" y1="300" x2="740" y2="380"/>
+    <line x1="480" y1="300" x2="620" y2="460"/>
+    <line x1="480" y1="300" x2="340" y2="460"/>
+    <line x1="480" y1="300" x2="220" y2="380"/>
+    <line x1="480" y1="300" x2="220" y2="240"/>
+    <line x1="480" y1="300" x2="320" y2="155"/>
+  </g>
+  <!-- center -->
+  <rect x="390" y="250" width="180" height="100" rx="16" fill="#fff" stroke="#d7e3ef"/>
+  <rect x="430" y="230" width="100" height="24" rx="12" fill="#2f6fed"/>
+  <text x="480" y="247" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#fff">{ } REST API</text>
+  <text x="480" y="290" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#1a2b3c">统一管控后台</text>
+  <text x="480" y="315" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11" fill="#6a7b8c">内容 · 经营模块 · 权限 · 审计</text>
+  <!-- nodes helper -->
+  <!-- top PC -->
+  <circle cx="480" cy="118" r="28" fill="#fff" stroke="#c9d8e6"/><text x="480" y="122" text-anchor="middle" font-size="11" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1a2b3c">PC官网</text>
+  <circle cx="640" cy="145" r="28" fill="#fff" stroke="#c9d8e6"/><text x="640" y="149" text-anchor="middle" font-size="11" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1a2b3c">小程序</text>
+  <circle cx="740" cy="240" r="28" fill="#fff" stroke="#c9d8e6"/><text x="740" y="244" text-anchor="middle" font-size="11" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1a2b3c">商城</text>
+  <circle cx="740" cy="380" r="28" fill="#fff" stroke="#c9d8e6"/><text x="740" y="384" text-anchor="middle" font-size="11" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1a2b3c">会员</text>
+  <circle cx="620" cy="470" r="28" fill="#fff" stroke="#c9d8e6"/><text x="620" y="474" text-anchor="middle" font-size="11" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1a2b3c">OA</text>
+  <circle cx="340" cy="470" r="28" fill="#fff" stroke="#c9d8e6"/><text x="340" y="474" text-anchor="middle" font-size="11" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1a2b3c">CRM</text>
+  <circle cx="220" cy="380" r="28" fill="#fff" stroke="#c9d8e6"/><text x="220" y="384" text-anchor="middle" font-size="11" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1a2b3c">ERP</text>
+  <circle cx="220" cy="240" r="28" fill="#fff" stroke="#c9d8e6"/><text x="220" y="244" text-anchor="middle" font-size="11" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1a2b3c">PLM</text>
+  <circle cx="320" cy="145" r="28" fill="#fff" stroke="#c9d8e6"/><text x="320" y="149" text-anchor="middle" font-size="11" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1a2b3c">MES</text>
+  <text x="480" y="525" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" fill="#5a6b7c">一个系统 · 一个内核 · 多端分发 · 经营模块按需点亮</text>
+</svg>
