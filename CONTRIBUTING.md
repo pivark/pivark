@@ -1,52 +1,58 @@
-# 参与贡献（Community）
+# Contributing to PivArk 开源版
 
-感谢你关注元舟 PivArk。本仓库面向 **Community 开源版** 的安装、阅读与二次开发协作。
+感谢关注元舟 PivArk 开源版。本文说明如何参与贡献。
 
-## 先读这些
+> **分支政策（2026-08-12）：** 开源仓 **只保留 `master`**。请 Fork 后提 PR 到 `master`；不要再开 `dev`/`develop` 长期分支。维护者说明见仓内 `docs/_team`（若你克隆的是完整维护树）。
 
-| 文档 | 内容 |
+## 开始之前
+
+1. 阅读 [docs/00-入门/快速开始.md](docs/00-入门/快速开始.md) 跑通本地环境  
+2. 编码规范 SSOT：[docs/03-开发/开发规范.md](docs/03-开发/开发规范.md)  
+3. 插件边界：[docs/06-插件/插件伙伴红线卡.md](docs/06-插件/插件伙伴红线卡.md)
+
+## 分支与 PR
+
+| 步骤 | 说明 |
 |------|------|
-| [README.md](README.md) | 使命、环境、安装入口、许可 |
-| [docs/BRANCHING.md](docs/BRANCHING.md) | **分支模型（develop / master / release / hotfix）** |
-| [docs/INSTALL.md](docs/INSTALL.md) | 安装 |
-| [docs/UPGRADE.md](docs/UPGRADE.md) | 升级与数据库平滑迁移 |
-| [docs/PLUGIN-DEV.md](docs/PLUGIN-DEV.md) | 第三方插件入门 |
-| [docs/SECURITY.md](docs/SECURITY.md) | 部署安全与漏洞通报 |
-| [LICENSE](LICENSE) | 开源许可全文 |
+| 1 | Fork [Gitee](https://gitee.com/pivark/pivark) 或 [GitHub](https://github.com/pivark/pivark) |
+| 2 | 从 **`master`** 拉短期分支：`feat/xxx`、`fix/xxx`、`docs/xxx` |
+| 3 | 提 **Pull Request → `master`** |
+| 4 | 描述写清：做了什么、为什么、如何验证 |
 
-## 贡献流程（标准）
+提交信息建议：`feat|fix|refactor|docs|chore(scope): 简述`（中英文均可）。
 
-1. Fork 本仓（Gitee 或 GitHub）。
-2. 从 **`develop`** 拉取分支：`feature/<你的主题>`。
-3. 本地按 [INSTALL.md](docs/INSTALL.md) 装通，完成改动与自测。
-4. 向本仓 **`develop`** 提交 Pull Request / Merge Request（**不要**直接打向 `master`）。
-5. 维护者 Review 后合入；发版时由维护者走 `release/*` → `master` + 标签。
+**不要**直接向 `master` 强推；版本发行由维护者打 **tag**（如 `v1.6.5`）并挂 Release 安装包。
 
-紧急线上修复见 [BRANCHING.md](docs/BRANCHING.md) 的 `hotfix/*` 说明。
+## 合入前自检
 
-## 接受什么 / 暂不接受什么
+```bash
+npm run test:unit
+npm run test:standards
+```
 
-**欢迎**
+若改动路由、权限、迁移或 `docs/` 链接，另跑：
 
-- Bug 修复、文档纠错、安装/升级说明改进
-- 在插件扩展点内的示例与文档
-- 可复现的问题报告（环境、版本、步骤、期望/实际）
+```bash
+npm run test:routes
+npm run test:docs
+```
 
-**请先开 Issue 讨论**
+## 代码要求
 
-- 大范围重构、换框架、平行造第二套核心模块
-- 改变对外 API / 装包契约的破坏性改动
+- PHP 文件保留完整版权头（见开发规范）
+- 业务逻辑写在 `app/common/service/`，控制器保持薄
+- 新表/字段须有中文 MySQL `COMMENT`
+- 插件业务放在 `weapp/{identifier}/`，勿改内核塞插件特例
 
-**请勿提交**
+## 文档
 
-- 密钥、令牌、客户数据、内部 dig 专属文档
-- 仅服务于私有部署的硬编码域名/后门
+- 契约/API 变更须更新对应文档
+- 文档内链用相对路径；发现错误也可用 [文档说明与贡献](docs/00-入门/文档说明与贡献.md) 留言
 
-## 行为与许可
+## 许可证
 
-- 保持友善、就事论事；攻击性言论可关闭讨论。
-- 贡献代码默认按本仓 [LICENSE](LICENSE) 授权。
+贡献的代码将按 [LICENSE](LICENSE) 发布。提交 PR 即表示您同意该许可条款。
 
-## 维护者发版（摘要）
+## 行为准则
 
-见 [docs/BRANCHING.md](docs/BRANCHING.md)：`develop` → `release/x.y.z` → `master` + `vX.Y.Z` + Releases 完整安装包附件。
+保持尊重、就事论事。骚扰、歧视或泄露他人隐私的内容将被拒绝。
