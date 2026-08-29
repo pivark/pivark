@@ -129,9 +129,20 @@
 |---|------------------------|----------------|
 | 定位 | 中枢基座开源版 | 经营模块与商业授权 |
 | 得到 | CMS 形态 · 会员 · API · 应用中心 · 官方内容插件等 | 商城 / OA / CRM / ERP… |
-| 协议 | 见 [LICENSE](LICENSE) | 商务授权 · [pivark.cn](https://www.pivark.cn) |
+| 协议 | **[PivArk Community 开源许可](LICENSE)**（非 MIT/Apache） | 商务授权 · [pivark.cn](https://www.pivark.cn) |
 
 认购关系与能力分层 → [产品简介](https://www.pivark.cn/docs/#/00-入门/产品简介#开源版-vs-企业版)
+
+---
+
+## 许可证
+
+本仓库采用 **[PivArk Community 开源许可](LICENSE)**（定制条款 / source-available）。
+
+- **允许**：学习、研究、修改、私有部署与商业建站使用（须保留「Powered by 元舟 PivArk」等版权标识）
+- **不是** Apache-2.0 / MIT 等 OSI 标准协议；去版权、Enterprise 模块等须另行商业授权
+- 全文见根目录 [`LICENSE`](LICENSE) · 贡献见 [`CONTRIBUTING.md`](CONTRIBUTING.md)
+
 
 ---
 
